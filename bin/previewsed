@@ -19,7 +19,7 @@ fi
 opts="
   $FZF_DEFAULT_OPTS
   --preview-window right:50%
-  --preview '(bat --style=numbers,changes --wrap never --color always {} || highlight -O ansi -l {} || cat {} || tree -C {}) 2> /dev/null | head -200'
+  --preview '(bat --style=numbers,changes --wrap never --color always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -200'
   --bind '?:toggle-preview'
   --bind='alt-w:toggle-preview-wrap'
   --bind='alt-k:preview-up,alt-p:preview-up'
